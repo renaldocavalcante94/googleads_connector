@@ -21,7 +21,7 @@ The developer token and Login Customer ID are related to your google ads account
 
 **login_customer_id** is the MCC id Login , used to get the basic access to the Developer toke
 
-```
+```yml
 # OAuth2 configuration
 ###############################################################################
 # The below configuration parameters are used to authenticate using the       #
@@ -95,7 +95,7 @@ The customer Id used in the class **GoogleAdsAPI** is referreed to the normal Ad
 
 ## Use
 
-```
+```python
 from google_ads.py import GoogleAdsAPI()
 
 ads = GoogleAdsAPI("./googleads.yaml",111-111-1111)
@@ -103,8 +103,4 @@ ads = GoogleAdsAPI("./googleads.yaml",111-111-1111)
 ads.get_campaigns() # Wil Return All campaigns
 ads.get_campaigns_performance(start_date="2018-01-01",end_date="Today") #Will get all companyes performance values for all campaigns
 ```
-
-
-
-
 
